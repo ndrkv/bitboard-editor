@@ -10,6 +10,8 @@ Learn more about bitboards at [Chess Programming Wiki](https://www.chessprogramm
 
 The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a constant, unsigned 64-bit number, which can be used to create test cases for a chess engine. This editor uses [Little-Endian](https://www.chessprogramming.org/Little-endian).
 
+**[Live Demo](https://bitboard-editor.vercel.app/)**
+
 ```
      A    B    C    D    E    F    G    H
    +----+----+----+----+----+----+----+----+

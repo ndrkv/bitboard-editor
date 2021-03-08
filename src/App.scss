@@ -1,0 +1,131 @@
+// Config constants
+$bg-color: #161616;
+$cell-color: white;
+$cell-width: 65px;
+
+// Not config constants
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+  color: white;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-container {
+  width: 60%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.board-container {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(8, auto);
+  justify-content: center;
+  grid-gap: 2px;
+  .board-item {
+    width: $cell-width;
+    height: $cell-width;
+    background: lighten($bg-color, 15%);
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: 5px;
+    text-align: center;
+    line-height: $cell-width;
+    user-select: none;
+    &.active,
+    &.active:hover {
+      background: $cell-color;
+      color: black;
+    }
+    &:hover {
+      background: lighten($bg-color, 12%);
+    }
+  }
+}
+
+.u64-container {
+  max-width: $cell-width * 8 + 14px;
+  margin: 20px auto;
+  position: relative;
+  input {
+    width: 100%;
+    border: none;
+    background: lighten($bg-color, 5%);
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    transition: 0.1s;
+    &:hover {
+      background: lighten($bg-color, 7.5%);
+    }
+    &:focus {
+      background: lighten($bg-color, 10%);
+      outline: none;
+    }
+  }
+  .copy-icon {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.1s;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+.controls-container {
+  width: $cell-width * 8 + 14px;
+  margin: 0 auto;
+  button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover {
+      transform: translateY(-2px);
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+
+// Notification box from react-notifications
+.notification-success {
+  box-shadow: none;
+  background: white;
+  color: black;
+}

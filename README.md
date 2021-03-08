@@ -1,4 +1,4 @@
-# What is a Bitboard?
+## What is a Bitboard?
 
 Bitboards, also called bitsets or bitmaps, are among other things used to represent the board inside a chess program in a piece centric manner. Bitboards, are in essence, finite sets of up to 64 elements - all the squares of a chessboard, one bit per square.
 
@@ -6,7 +6,7 @@ To represent the board we typically need one bitboard for each piece-type and co
 
 Learn more about bitboards at [Chess Programming Wiki](https://www.chessprogramming.org/Bitboards)
 
-# Bitboard Editor
+## Bitboard Editor
 
 The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a constant, unsigned 64-bit number, which can be used to create test cases for a chess engine. This editor uses [Little-Endian](https://www.chessprogramming.org/Little-endian).
 
@@ -32,7 +32,7 @@ The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a consta
      A    B    C    D    E    F    G    H - file(s)
 ```
 
-# How to set up locally
+## How to set up locally
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so the set up proccess is pretty straightforward:
 

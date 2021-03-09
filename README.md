@@ -8,7 +8,7 @@ Learn more about bitboards at [Chess Programming Wiki](https://www.chessprogramm
 
 ## Bitboard Editor
 
-The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a constant, unsigned 64-bit number, which can be used to create test cases for a chess engine. This editor uses [Little-Endian](https://www.chessprogramming.org/Little-endian).
+The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a constant, unsigned 64-bit number, which can be used to create test cases for a chess engine. This editor uses [little-endian](https://www.chessprogramming.org/Little-endian).
 
 **[Live Demo](https://bitboard-editor.vercel.app/)**
 
@@ -34,9 +34,9 @@ The Bitboard Editor allows you to visually edit a 64-bit bitmap and get a consta
      A    B    C    D    E    F    G    H - file(s)
 ```
 
-## How to set up locally
+## How to setup locally
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so the set up proccess is pretty straightforward:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so the setup process is pretty straightforward:
 
 ```bash
 git clone https://github.com/ndrkv/bitboard-editor
@@ -45,4 +45,4 @@ npm install
 npm start
 ```
 
-Check out create-react-app [README](https://github.com/facebook/create-react-app/blob/master/README.md) for more information.
+Check out create-react-app [readme](https://github.com/facebook/create-react-app/blob/master/README.md) for more information.
